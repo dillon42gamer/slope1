@@ -20,6 +20,16 @@
      crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2541434264715219"
      crossorigin="anonymous"></script>
+   <script>
+        // Add an event listener to detect key presses
+        document.addEventListener("keydown", function(event) {
+            // Check if the pressed key is "P" (key code for "P" is 80)
+            if (event.key === "p" || event.key === "P") {
+                // Redirect to the specified URL
+                window.location.href = "https://classroom.google.com";
+            }
+        });
+    </script>
     <style>
         .alert {
           padding: 20px;
