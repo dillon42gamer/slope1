@@ -14,7 +14,7 @@ document.addEventListener("keydown", function(event) {
                         document.addEventListener('keydown', function(event) {
                             // Handle "P" key press within the iframe context
                             if (event.key === 'p' || event.key === 'P') {
-                                window.location.href = 'https://classroom.google.com'; // Make sure this is classroom.google.com
+                                window.location.href = 'https://classroom.google.com'; // Make sure this is classroom.google.com IT IS
                             }
                         });
                     <\/script>
