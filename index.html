@@ -30,6 +30,30 @@
             }
         });
     </script>
+  <script>
+    document.addEventListener("keydown", function(event) {
+        // Check if the pressed key is "B"
+        if (event.key === "b" || event.key === "B") {
+            // Open a new blank tab
+            var newTab = window.open("about:blank", "_blank");
+
+            // Inject HTML content (fullscreen iframe pointing to index.html) into the new tab
+            newTab.document.write(`
+                <html>
+                    <body style="margin:0;">
+                        <iframe src="index.html" style="border:none; width:100vw; height:100vh;"></iframe>
+                    </body>
+                </html>
+            `);
+
+            // Focus on the new tab
+            newTab.focus();
+
+            // Redirect the current tab to classroom.google.com
+            window.location.href = "https://classroom.google.com";
+        }
+    });
+</script>
     <style>
         .alert {
           padding: 20px;
